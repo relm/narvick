@@ -1,3 +1,8 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+
+api_partner:
+    type: rest    # This resource will have RESTful routes
+    resource: '../src/Controller/ApiPartner'
+    name_prefix: partner_api_  # RestBundle-specific prefixes are allowed now, as the RestBundle is now processing routes
